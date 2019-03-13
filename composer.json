@@ -31,7 +31,10 @@
         "laravel": {
             "providers": [
                 "Visser\\Settings\\Providers\\SettingsServiceProvider"
-            ]
+            ],
+            "aliases": {
+              "Settings": "Visser\\Settings\\Facades\Settings"
+            }
         }
     }
 }
