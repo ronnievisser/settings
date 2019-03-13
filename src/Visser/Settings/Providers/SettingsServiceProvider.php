@@ -49,14 +49,14 @@ class SettingsServiceProvider extends ServiceProvider
         foreach ($override as $key => $settingKey) {
             $configKey = is_string($key) ? $key : $settingKey;
 
-            $dispatcher->fire("settings.overriding: {$configKey}", [$configKey, $settingKey]);
+            $dispatcher->dispatch("settings.overriding: {$configKey}", [$configKey, $settingKey]);
 
             $settingValue = $settings->get($settingKey);
             $configValue = $config->get($configKey);
 
             $config->set($configKey, $settingValue);
 
-            $dispatcher->fire("settings.override: {$configKey}", [
+            $dispatcher->dispatch("settings.override: {$configKey}", [
                 $configKey, $configValue, $settingKey, $settingValue
             ]);
         }
