@@ -36,7 +36,7 @@ Require this package in your composer.json:
 | Laravel Version       | Package version          |
 | --------------------- | ------------------------ |
 | >=5.0, <=5.1          | >= 1.0.0, <= 2.0.0       |
-| 5.2                   | >= 2.0.0                 |
+| 5.2 >                 | >= 2.0.0                 |
 
 ### Registering to use it with laravel
 
