@@ -27,7 +27,7 @@ Require this package in your composer.json:
 
 ```
 "require": {
-  "edvinaskrucas/settings": "2.0.0"
+  "ronnievisser/settings": "2.0.0"
 }
 ```
 
@@ -45,19 +45,19 @@ Add following lines to ```app/config/app.php```
 ServiceProvider array
 
 ```php
-Krucas\Settings\Providers\SettingsServiceProvider::class,
+Visser\Settings\Providers\SettingsServiceProvider::class,
 ```
 
 Alias array
 ```php
-'Settings' => Krucas\Settings\Facades\Settings::class
+'Settings' => Visser\Settings\Facades\Settings::class
 ```
 
 ### Publishing config file
 
 If you want to edit default config file, just publish it to your app folder.
 
-    php artisan vendor:publish --provider="Krucas\Settings\Providers\SettingsServiceProvider" --tag="config"
+    php artisan vendor:publish --provider="Visser\Settings\Providers\SettingsServiceProvider" --tag="config"
 
 ## Usage
 
