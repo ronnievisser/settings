@@ -19,6 +19,8 @@ Persistent settings package for Laravel 5.
 
 ---
 
+This is a clone from edvinaskrucas/settings but fixes the removal of fire method on the event dispatcher. So it's ready to be used fro Laravel 5.8.
+
 ## Installation
 
 Require this package in your composer.json:
