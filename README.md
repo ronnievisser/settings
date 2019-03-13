@@ -42,17 +42,6 @@ Require this package in your composer.json:
 
 Add following lines to ```app/config/app.php```
 
-ServiceProvider array
-
-```php
-Visser\Settings\Providers\SettingsServiceProvider::class,
-```
-
-Alias array
-```php
-'Settings' => Visser\Settings\Facades\Settings::class
-```
-
 ### Publishing config file
 
 If you want to edit default config file, just publish it to your app folder.
