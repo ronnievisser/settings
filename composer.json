@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-0": {
-      "Krucas\\Settings\\": "src/"
+      "Visser\\Settings\\": "src/"
     },
     "files": [
       "src/helpers.php"
